@@ -1,0 +1,104 @@
+<!--------f-----------
+
+    Project 4 
+	Name: Dawson Zorn
+	Date: 2024-04-09
+	Description: Using all my skills from the term to create a home page a product page and a contact page using html css and javascript
+
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="form.js"></script>
+    <title>Project 4 Contact</title>
+</head>
+<body>
+    <header>
+        <div id="headermain">
+            <h1><b>Welcome to Zorn FC</b></h1>
+            <img src ="images/zornfc.png" alt="ZornFC Logo"/>
+            <h2>Home of Munich's Football Club</h2>
+        </div>
+    </header>
+
+        <nav class="header2">
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                </ul>
+        </nav>
+
+
+        <form  id="contact_form" action="index.html">
+            <fieldset id = "contactinfo">
+                <legend>Contact Information</legend>
+                <div class="formfield">
+                    <ul>
+                        <li>
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" name="fullname" type="text" class="input-field"/>
+                            <p class="contact error" id="fullname_error">* Required field</p>
+                        </li>
+                        
+                        <li>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="123 456 789" class="input-field"/>
+                            <p class ="contact error" id="phonenumber_error">*Required field</p>
+                            <p class ="contact error" id="phoneformat_error">*Invalid phone number</p>
+                        </li>
+    
+                    <li>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" class="input-field"/>
+                    <p class="contact error" id="email_error">* Required field</p>
+                    <p class="contact error" id="emailformat_error">* Invalid email address</p>
+                </li>
+            </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Comments Section</legend>
+                <hr />
+                <label for="feedback">Please leave any feedback it would be greatly appreciated</label><br />
+                <textarea id="feedback" name="feedback" rows="8" cols="50"></textarea>
+                <hr />
+                <div class="clear"></div>
+                <button type="reset" >Clear Information</button>
+                <button type="submit" >Submit</button>
+            </fieldset>
+        </form>
+
+        <footer class = "sponsors">
+            <h3>Our Partners</h3>
+            <ul>
+                <li><img src= "images/adidas.png" alt ="adidas logo"/></li>
+                <li><img src= "images/mercedes.png" alt ="mercedes logo"/></li>
+                <li><img src= "images/arcteryx.png" alt ="arcteryx logo"/></li>
+                <li><img src= "images/telus.png" alt ="telus logo"/></li>
+                <li><img src= "images/rolex.png" alt ="rolex logo"/></li>
+            </ul>
+    
+            <nav class = "footerlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="product.html">Products</a></li>
+                </ul>
+            </nav>
+            <p>© Zorn FC - 2024 </p>
+        </footer>
+</body>
+</html>
